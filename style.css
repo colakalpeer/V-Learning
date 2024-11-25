@@ -6,3 +6,18 @@ body {
     display: flex;
     height: 100vh;
 }
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.main-side {
+    background-color: #ffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
