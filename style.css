@@ -44,3 +44,40 @@ h5 {
     font-size: 18px;
     margin-bottom: 20px;
 }
+
+button {
+    background-color: white;
+        color: #333;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 16px;
+        cursor: pointer;
+}
+
+button:hover {
+    background-color: #f1f1f1;
+  }
+
+
+/* Checkbox ve yazı için stil */
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.remember-me input {
+    margin-right: 10px;
+}
+
+.forgot-password {
+    color: #f4f4f4;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
