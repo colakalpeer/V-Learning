@@ -13,7 +13,7 @@ body {
 }
 
 .main-side {
-    background-color: #ffff;
+    background-color: #f4f4f4;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -21,3 +21,11 @@ body {
     align-items: center;
 }
 
+.side-bar {
+    width: 1800px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
