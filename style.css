@@ -62,22 +62,22 @@ button:hover {
 
 
 /* Checkbox ve yazı için stil */
-.remember-me {
+#remember-me {
     display: flex;
     align-items: center;
     margin: 10px 0;
 }
 
-.remember-me input {
+#remember-me input {
     margin-right: 10px;
 }
 
-.forgot-password {
+#forgot-password {
     color: #f4f4f4;
     text-decoration: none;
     margin-left: 10px;
 }
 
-.forgot-password:hover {
+#forgot-password:hover {
     text-decoration: underline;
 }
