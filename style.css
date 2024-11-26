@@ -1,83 +1,76 @@
-/* general settings */
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 900px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.main-side {
-    background-color: #f4f4f4;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.login-box {
+  flex: 1;
+  padding: 40px;
+  text-align: center;
 }
 
-.side-bar {
-    width: 1800px;
-    background-color: blue;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.login-box h1.logo {
+  color: #d90000;
 }
 
-h1 {
-    font-size: 60px;
-    margin-bottom: 0px;
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-h3 {
-    font-size: 24px;
-    margin: 20px 0;
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
-h5 {
-    font-size: 18px;
-    margin-bottom: 20px;
+button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: #d90000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-button {
-    background-color: white;
-        color: #333;
-        border: 1px solid #ccc;
-        padding: 10px;
-        border-radius: 5px;
-        width: 100%;
-        font-size: 16px;
-        cursor: pointer;
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
 }
 
-button:hover {
-    background-color: #f1f1f1;
-  }
-
-
-/* Checkbox ve yazı için stil */
-#remember-me {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
+.social-btn {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-#remember-me input {
-    margin-right: 10px;
-}
-
-#forgot-password {
-    color: #f4f4f4;
-    text-decoration: none;
-    margin-left: 10px;
-}
-
-#forgot-password:hover {
-    text-decoration: underline;
+.image-box {
+  flex: 1;
+  background: url("image.jpg") center/cover no-repeat;
 }

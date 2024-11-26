@@ -3,29 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Giriş Formu</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Giriş Sayfası</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <!-- main side -->
-      <div class="main-side">
-        <h1>V-Learning</h1>
-        <h3>Öğrenmenin Merkezine Hoş Geldiniz!</h3>
-        <h5>Sizi tekrar gördüğümüze sevindik.</h5>
-        <button id="mail">E-mail Adresinizi Girin</button>
-        <button id="password">Şifrenizi Girin</button>
-        <div class="remember-me">
-          <input type="checkbox" id="remember-me">
-          <label for="remember-me">Beni hatırla</label>
-          <a href="#" id="forgot-password">Şifrenizi mi unuttunuz ?</a>
-          <button id="log-in">Giriş Yap</button>
-        </div>
+      <div class="login-box">
+        <h1 class="logo">V - LEARNING</h1>
+        <h2>Öğrenmenin Merkezine Hoş Geldiniz!</h2>
+        <p>Sizi tekrar gördüğümüze sevindik.</p>
+        <form>
+          <input type="email" placeholder="E-posta adresinizi girin" required />
+          <input type="password" placeholder="Şifrenizi girin" required />
+          <div class="remember-forgot">
+            <label><input type="checkbox" /> Beni hatırla</label>
+            <a href="#">Şifrenizi mi unuttunuz?</a>
+          </div>
+          <button type="submit">Giriş Yap</button>
+          <div class="social-login">
+            <button class="social-btn">Facebook</button>
+            <button class="social-btn">Google</button>
+            <button class="social-btn">Apple</button>
+          </div>
+        </form>
+        <p>Hesabınız yok mu? <a href="#">Kayıt olun</a></p>
+      </div>
+      <div class="image-box">
+        <img src="image.jpg" alt="Login Image" />
       </div>
     </div>
-
-    <div class="side-bar">
-      
-  </div>
   </body>
 </html>
