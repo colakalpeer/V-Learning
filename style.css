@@ -1,89 +1,26 @@
-/* general settings */
 body {
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f0f0;
+  top: 0;
 }
 
-/* main container */
 .container {
   display: flex;
-  width: 900px;
-  height: 500px;
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  height: 100vh;
 }
 
-.login-box {
-  width: 50%;
+.left-side,
+.right-side {
   display: flex;
-  flex-direction: column;
+  flex: 1;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 40px;
-  box-sizing: border-box;
-}
-
-.login-box h1.logo {
-  color: #d90000;
-  margin-bottom: 20px;
-}
-
-form input[type="email"],
-form input[type="password"] {
-  width: 100%;
-  padding: 15px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* remember me - forgot pasword part*/
-.remember-forgot {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  width: 100%;
-}
-
-/* log-in btn */
-button[type="submit"] {
-  width: 100%;
-  padding: 15px;
-  background-color: #d90000;
   color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
 }
 
-.social-login {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 15px;
+.right-side {
+  background-color: #fcfcfc;
 }
 
-.social-btn {
-  background: none;
-  border: 1px solid #ccc;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* right-side */
-.image-box {
-  width: 50%;
-  background: url("image.jpg") center/cover no-repeat;
-  background-size: cover;
+.left-side {
+  background-color: #fcfcfc;
 }
