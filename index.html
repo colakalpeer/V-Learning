@@ -20,7 +20,11 @@
         <h5>Sizi tekrar gördüğümüze sevindik.</h5>
         <form name="RegForm" onsubmit="return validateForm()">
           <input class="email" placeholder="E-mail adresinizi girin" />
+          <span id="email-error" class="error-message"></span>
+
           <input class="password" placeholder="Şifrenizi girin" />
+          <span id="pasword-error" class="error-message"></span>
+
           <div class="remember-forgot">
             <label>
               <input type="checkbox" />
