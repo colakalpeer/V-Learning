@@ -1,9 +1,10 @@
 function validateForm() {
-  const email = document.getElementById("email").valueitrim();
+  const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value.trim();
   const emailError = document.getElementById("email-error");
   const passwordError = document.getElementById("password-error");
 
+  
   emailError.textContent = "";
   passwordError.textContent = "";
 
@@ -18,9 +19,9 @@ function validateForm() {
     isValid = false;
   }
 
+  // Password validation
   if (password === "" || password.length < 6) {
-    passwordError.textContent =
-      "Please enter a password with at least 6 characters.";
+    passwordError.textContent = "Please enter a password with at least 6 characters.";
     isValid = false;
   }
 
