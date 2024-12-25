@@ -4,7 +4,6 @@ function validateForm() {
   const emailError = document.getElementById("email-error");
   const passwordError = document.getElementById("password-error");
 
-  
   emailError.textContent = "";
   passwordError.textContent = "";
 
@@ -21,7 +20,8 @@ function validateForm() {
 
   // Password validation
   if (password === "" || password.length < 6) {
-    passwordError.textContent = "Please enter a password with at least 6 characters.";
+    passwordError.textContent =
+      "Please enter a password with at least 6 characters.";
     isValid = false;
   }
 
