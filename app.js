@@ -9,12 +9,11 @@ function validateForm() {
 
   let isValid = true;
 
-  if (email === "" || /\d/.test(email)) {
-    emailError.textContent = "Please enter your E-mail properly.";
+  // Email validation
+  if (email === "") {
+    emailError.textContent = "Please enter your email.";
     isValid = false;
-  }
-
-  if (email === "" || !email.includes("@")) {
+  } else if (!/\S+@\S+\.\S+/.test(email)) {
     emailError.textContent = "Please enter a valid email address.";
     isValid = false;
   }
