@@ -7,7 +7,7 @@ function validateForm() {
   emailError.textContent = "";
   passwordError.textContent = "";
 
-  const isValid = true;
+  let isValid = true;
 
   if (email === "" || /\d/.test(email)) {
     emailError.textContent = "Please enter your E-mail properly.";
