@@ -158,12 +158,3 @@ button[type="submit"]:hover {
   width: 50%;
   height: 50vh;
 }
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-  .right-side {
-    display: none; /* hide on mobile */
-  }
-}
